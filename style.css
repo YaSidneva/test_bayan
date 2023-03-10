@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+ul,
+ol,
+li {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+input,
+button {
+  font: inherit;
+  border: none;
+  padding: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  width: 90%;
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+main {
+  width: 90%;
+}
+
+li {
+  border-top: 1px solid grey;
+  color: blue;
+}
+
+.description-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 10%;
+  display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+.arrow {
+  width: 1em;
+}
+
+.arrow-up {
+  display: none;
+}
+
+.meme {
+  width: 100%;
+  display: none;
+  margin: 10px auto;
+}
+
+
+input {
+  display: none;
+}
+
+#switch:checked + label {
+  color: black;
+}
+
+#switch:checked + label>.meme {
+  display: block;
+}
+
+#switch:checked + label .arrow-up {
+  display: block;
+}
+
+#switch:checked + label .arrow-down {
+  display: none;
+}
+
+@media screen and (min-width: 820px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    label:hover {
+      cursor: pointer;
+    }
+    
+    ul:hover>li {
+        color: black;
+    }
+
+    ul:hover .arrow {
+        opacity: 1;
+    }
+
+  
+
+  li:hover .meme {
+    display: block;
+  }
+}
+
+
